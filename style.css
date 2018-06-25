@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  font: 300 1.6rem/1.5 "Lato", sans-serif;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  text-transform: uppercase;
+  /*position: relative;*/
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 5.4rem;
+  letter-spacing: 8px;
+  margin-top: 10vh;
+  line-height: 1.2;
+}
+
+.header__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2;
+
+}
+
+.header__scroll {
+  margin-top: 15vh;
+  transition: all .4s ease;
+}
+
+.header__scroll:hover,
+.header__scroll:focus {
+  /*transform: scale(1.2);*/
+  transform: rotateX(180deg);
+}
+
+.wrap {
+  padding: 0 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap--100h {
+  height: 100vh;
+}
+
+.wrap--border {
+  border: 2px solid #3c3c3c;
+  border-top: none;
+  padding: 50px 150px;
+  position: relative;
+}
+
+.section--bg .wrap--border,
+.section--bg .wrap--border:before,
+.section--bg .wrap--border:after {
+  border-color: #ffffff;
+
+}
+
+.wrap--border:before,
+.wrap--border:after {
+  content: "";
+  display: block;
+  width: 30%;
+  border-top: 2px solid #3c3c3c;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.wrap--border:after {
+  left: auto;
+  right: 0;
+}
+
+.section:not(.header) {
+  padding: 160px 0;
+}
+
+.section--bg {
+  background-color: #a7b2c3;
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section__title {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  max-width: 40%;
+  transform: translate(-50%, -100%);
+  font-size: 3.4rem;
+  letter-spacing: 5px;
+}
+
+.section__text--m {
+  margin: 50px 0 50px 0;
+}
+
+.section__span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  margin: 40px 0 35px 0;
+}
+
+.section__btn {
+  margin-top: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  width: 55%;
+  padding: 20px 0;
+  background: #3c3c3c;
+  color: #e5e5e5;
+  border: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.section__btn:hover,
+.section__btn:focus {
+  color: #3c3c3c;
+  border: 2px solid #3c3c3c;
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+/*.section__foot {*/
+  /*padding: 0;*/
+  /*margin: 0;*/
+/*}*/
+
+/*.section__li {*/
+  /*list-style-type: none;*/
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+/*}*/
+
+/*.section__link {*/
+  /*text-decoration: none;*/
+  /*color: #3c3c3c;*/
+/*}*/
+
+/*.section__li svg {*/
+  /*fill: #8b8b8b;*/
+/*}*/
+
+.project {
+
+}
+
+.project__link {
+  display: block;
+  height: 240px;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  overflow: hidden;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+
+.project__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+.project__title {
+  position: absolute;
+  left: 60px;
+  bottom: 45px;
+  right: 60px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.flex-item {
+  /*min-width: 30%;*/
+  width: 30%;
+  margin-bottom: 5px;
+  /*flex-basis: auto;*/
+}
+.flex-item:nth-of-type(2),
+.flex-item:nth-of-type(5){
+  width: 39%;
+}
+/*.footer__logo .stroke{*/
+  /*stroke: #3c3c3c;*/
+
+/*}*/
+.footer{
+  text-align: center;
+  padding: 20px 0;
+}
+.footer__logo,
+.footer_copy{
+  /*stroke: #3c3c3c;*/
+  /*fill: none;*/
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.section__link{
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+}
+.section__link:hover{
+  border-bottom-color: #3c3c3c;
+}
+.footer svg{
+  stroke: #3c3c3c;
+  fill: #3c3c3c;
+}
+.header svg{
+  fill: #fff;
+  stroke: #fff;
+}
